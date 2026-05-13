@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #10280d;
+  color: #f4f1e7;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #294c1d;
+  padding: 18px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.logo span span {
+  color: #f28a45;
+}
+
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background-color: #f28a45;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #d5d0b8;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #f28a45;
+}
+
+.nav-links .active {
+  background-color: #3a4f1d;
+  padding: 11px 20px;
+  border-radius: 25px;
+}
+
+.trip-btn {
+  background-color: #f28a45;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 28px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.trip-btn:hover {
+  background-color: #ff9a55;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.close-btn {
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-links a {
+  color: #e4dec8;
+  text-decoration: none;
+  padding: 15px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.mobile-links a.active {
+  background-color: #354818;
+  color: #f28a45;
+}
+
+.mobile-trip {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 16px;
+}
+
+.content {
+  min-height: 350px;
+  padding: 80px 10%;
+  background-color: #15330f;
+}
+
+.content h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  color: #c4bea4;
+}
+
+.footer {
+  background-color: #14330f;
+  padding: 70px 0 30px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 90px;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.footer-column p {
+  color: #b6af91;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  font-size: 15px;
+}
+
+.footer-column a {
+  display: block;
+  color: #b6af91;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.footer-column a:hover,
+.footer-column .footer-active {
+  color: #f28a45;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-bottom {
+  width: 90%;
+  max-width: 1350px;
+  margin: 50px auto 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #706f53;
+  font-size: 13px;
+}
+
+@media (max-width: 950px) {
+  .nav-links,
+  .desktop-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: #14330f;
+    padding: 22px;
+    z-index: 2000;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 23px;
+  }
+
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .trip-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 60px 7%;
+  }
+}
