@@ -9,7 +9,7 @@ body {
   background-color: #10280d;
   color: #f4f1e7;
 }
-
+/* Navbar + navbar stuff */
 .navbar {
   width: 100%;
   background-color: #294c1d;
@@ -149,7 +149,7 @@ body {
   margin-top: 25px;
   border-radius: 16px;
 }
-
+/* Content */
 .content {
   min-height: 350px;
   padding: 80px 10%;
@@ -164,7 +164,7 @@ body {
 .content p {
   color: #c4bea4;
 }
-
+/* Footer + footer stuff */
 .footer {
   background-color: #14330f;
   padding: 70px 0 30px;
@@ -221,7 +221,7 @@ body {
   color: #706f53;
   font-size: 13px;
 }
-
+/* Responsive дизайн */
 @media (max-width: 950px) {
   .nav-links,
   .desktop-btn {
