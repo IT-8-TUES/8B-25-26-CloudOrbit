@@ -150,20 +150,7 @@ body {
   border-radius: 16px;
 }
 /* Content */
-.content {
-  min-height: 350px;
-  padding: 80px 10%;
-  background-color: #15330f;
-}
 
-.content h1 {
-  font-size: 45px;
-  margin-bottom: 15px;
-}
-
-.content p {
-  color: #c4bea4;
-}
 /* Footer + footer stuff */
 .footer {
   background-color: #14330f;

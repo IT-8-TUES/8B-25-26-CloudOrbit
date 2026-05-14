@@ -9,6 +9,7 @@ body {
   background-color: #10280d;
   color: #f4f1e7;
 }
+
 /* Navbar + Navbar stuff */
 .navbar {
   width: 100%;
@@ -149,21 +150,80 @@ body {
   margin-top: 25px;
   border-radius: 16px;
 }
-/* Content */
-.content {
-  min-height: 350px;
-  padding: 80px 10%;
-  background-color: #15330f;
+
+/* Za Purviq div */
+.begginingPart {
+  width: 100%;
+  min-height: 10rem;
+  background: #4b8f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-.content h1 {
-  font-size: 45px;
-  margin-bottom: 15px;
+.begginingPart h5 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d9e7c7;
+  margin-bottom: 1rem;
 }
 
-.content p {
-  color: #c4bea4;
+.begginingPart h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
 }
+
+.begginingPart p {
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #d8e6c8;
+}
+
+/* Za Vtoriq div */
+.secondPart {
+  width: 100%;
+  height: 50rem;
+  background-color: #eff3e4
+}
+
+/* Kartichkite */
+.card_left {
+  width: 25%;
+  margin-left: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin-right: 1rem;
+}
+.card_right {
+  width: 25%;
+  margin-right: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  margin-left: 1rem;
+
+}
+.card_title{
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #14330f;
+  margin-bottom: 0.5rem;
+}
+
 /* Footer + Footer stuff */
 .footer {
   background-color: #14330f;
@@ -221,8 +281,10 @@ body {
   color: #706f53;
   font-size: 13px;
 }
+
 /* Responsive дизайн */
 @media (max-width: 950px) {
+
   .nav-links,
   .desktop-btn {
     display: none;
