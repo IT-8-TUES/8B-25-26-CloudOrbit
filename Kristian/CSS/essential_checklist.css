@@ -9,6 +9,7 @@ body {
   background-color: #10280d;
   color: #f4f1e7;
 }
+
 /* Navbar + navbar stuff */
 .navbar {
   width: 100%;
@@ -149,7 +150,218 @@ body {
   margin-top: 25px;
   border-radius: 16px;
 }
+
 /* Content */
+.first_part{
+  width: 100%;
+  min-height: 10rem;
+  background: #386819;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.first_part h5 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d9e7c7;
+  margin-bottom: 1rem;
+}
+.first_part h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
+}
+
+.first_part p {
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #d8e6c8;
+}
+.second_part {
+  width: 100%;
+  min-height: 10rem;
+  background: #f5f3ea;
+  padding: 4rem 1rem;
+}
+.reminder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: 0.125rem solid #df8b02;
+  background-color: #fbc5a0;
+  border-radius: 16px;
+  width: 50%;
+  margin: 2rem auto;
+}
+.theme-green {
+  --theme-light: #edf2ea;
+  --theme-dark: #3a6838;
+}
+
+.theme-orange {
+  --theme-light: #fbebdc;
+  --theme-dark: #b66d33;
+}
+
+.theme-blue {
+  --theme-light: #dceef9;
+  --theme-dark: #2f698c;
+}
+
+.theme-olive {
+  --theme-light: #f2ead7;
+  --theme-dark: #6e673f;
+}
+
+.theme-purple {
+  --theme-light: #f4dcf2;
+  --theme-dark: #7b436e;
+}
+
+.camping-checklist-app {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.category-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  background-color: var(--theme-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-container {
+  background-color: var(--theme-dark);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-title h2 {
+  margin: 0;
+  color: var(--theme-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.progress-tracker {
+  color: var(--theme-dark);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 24px;
+  border: 1px solid #fdfdfd;
+  border-top: none;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checklist-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #cdbfae;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.checklist-item input[type="checkbox"]:hover {
+  border-color: #a39585;
+}
+
+.checklist-item input[type="checkbox"]:checked {
+  background-color: #cdbfae;
+}
+
+.checklist-item input[type="checkbox"]:checked::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checklist-item label {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #222;
+  user-select: none;
+}
+.progress-bar-container {
+  height: 4px;
+  background-color: #6ea44d;
+  width: 15%;
+  height: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--theme-dark);
+  width: 0%; 
+  transition: width 0.3s ease; 
+}
 
 /* Footer + footer stuff */
 .footer {
@@ -208,8 +420,10 @@ body {
   color: #706f53;
   font-size: 13px;
 }
+
 /* Responsive дизайн */
 @media (max-width: 950px) {
+
   .nav-links,
   .desktop-btn {
     display: none;
