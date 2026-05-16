@@ -201,6 +201,16 @@ body {
   width: 50%;
   margin: 2rem auto;
 }
+.reminder b {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #141210;
+}
+.reminder p{
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  color: #353534;
+}
 .theme-green {
   --theme-light: #edf2ea;
   --theme-dark: #3a6838;
