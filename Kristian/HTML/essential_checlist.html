@@ -56,104 +56,257 @@
     </div>
   </header>
   <main>
-    <main>
-      <div>
-        <h6>Don't Forget a Thing!</h6>
-        <h2>Camping Essentials Checklist</h2>
-        <p>Pack smart, camp happy. Check off everything you need before you head out on your adventure.</p>
-        <p>0 of 37 items packed</p>
-        <p> 0%</p>
+    <div class="first_part">
+      <h6>Don't Forget a Thing!</h6>
+      <h2>Camping Essentials Checklist</h2>
+      <p>Pack smart, camp happy. Check off everything you need before you head out on your adventure.</p>
+      <p>0 of 37 items packed</p>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
       </div>
-      <div>
-        <section>
-          <p><b>Reminder</b>:Always pack according to the weather forecast, the location of your campsite, and the
-            length of your trip. What you need for one night differs greatly from a week-long adventure!</p>
-        </section>
-        <section>
-          <aside>
-            <h3>Tent & Sleeping Gear</h3>
-            <p>0/6</p>
-          </aside>
-          <button class="check-btn">Check All</button>
-          <ul>
-            <li><button class="check-btn">Tent</button></li>
-            <li><button class="check-btn">Sleeping Bag</button></li>
-            <li><button class="check-btn">Sleeping Mat or Foam Pad</button></li>
-            <li><button class="check-btn">Camping Pillow or Inflatble pillow</button></li>
-            <li><button class="check-btn">Ground Tarp or Footprint</button></li>
-            <li><button class="check-btn">Extra blankets for cold nights</button></li>
-          </ul>
-        </section>
-        <section>
-          <aside>
-            <h3>Cooking & Food</h3>
-            <p>0/8</p>
-          </aside>
-          <button class="check-btn">Check All</button>
-          <ul>
-            <li><button class="check-btn">Portable Stove or Camping Grill</button></li>
-            <li><button class="check-btn">Fuel for Stove or a Lighter</button></li>
-            <li><button class="check-btn">Cookware (pots, pans, utensils)</button></li>
-            <li><button class="check-btn">Eating Utensils and Plates/Bowls</button></li>
-            <li><button class="check-btn">Reusable Water Bottles(atleast 2L)</button></li>
-            <li><button class="check-btn">Snacks and easy to cook meals</button></li>
-            <li><button class="check-btn">Cooler or insulated bags</button></li>
-            <li><button class="check-btn">Biodegradable trash bags</button></li>
-          </ul>
-        </section>
-        <section>
-          <aside>
-            <h3>Clothing</h3>
-            <p>0/7</p>
-          </aside>
-          <button class="check-btn">Check All</button>
-          <ul>
-            <li><button class="check-btn">Weather-appropriate clothing (layers for warmth, rain gear)</button></li>
-            <li><button class="check-btn">Sturdy hiking boots or shoes</button></li>
-            <li><button class="check-btn">Socks (preferably moisture-wicking)</button></li>
-            <li><button class="check-btn">Hat and sunglasses for sun protection</button></li>
-            <li><button class="check-btn">Extra clothing items (backup shirts, pants)</button></li>
-            <li><button class="check-btn">Towel and washcloth</button></li>
-            <li><button class="check-btn">Lightweight gloves for handling hot items or rough terrain</button></li>
-          </ul>
-        </section>
-        <section>
-          <aside>
-            <h3>Tools & Equipment</h3>
-            <p>0/8</p>
-            <button class="check-btn">Check All</button>
-            <ul>
-              <li><button class="check-btn">Multi-tool or knife</button></li>
-              <li><button class="check-btn">Headlamp or flashlight with extra batteries</button></li>
-              <li><button class="check-btn">Map and compass or GPS device</button></li>
-              <li><button class="check-btn">First aid kit</button></li>
-              <li><button class="check-btn">Duct tape for quick repairs</button></li>
-              <li><button class="check-btn">Rope or paracord for hanging food or setting up tarps</button></li>
-              <li><button class="check-btn">Portable phone charger or power bank</button></li>
-              <li><button class="check-btn">Waterproof matches or lighter</button></li>
-            </ul>
-          </aside>
-        </section>
-        <section>
-          <aside>
-            <h3>Hygiene & Health</h3>
-            <p>0/8</p>
-            <button class="check-btn">Check All</button>
-            <ul>
-              <li><button class="check-btn">First aid kit</button></li>
-              <li><button class="check-btn">Sunscreen(SPF 30 or higher)</button></li>
-              <li><button class="check-btn">Insect repellent spray</button></li>
-              <li><button class="check-btn">Hand sanitizer and wet wipes</button></li>
-              <li><button class="check-btn">Feminine hygiene products if needed</button></li>
-              <li><button class="check-btn">Small mirror for grooming or signaling</button></li>
-              <li><button class="check-btn">Tissues or toilet paper (biodegradable if possible)</button></li>
-              <li><button class="check-btn">Small towel or bandana for drying off or cleaning up</button></li>
-            </ul>
-          </aside>
-        </section>
-      </div>
+      <p> 0%</p>
+    </div>
+    <div class="second_part">
+      <section class="reminder">
+        <p><b>Reminder</b>:Always pack according to the weather forecast, the location of your campsite, and the
+          length of your trip. What you need for one night differs greatly from a week-long adventure!</p>
+      </section>
 
-    </main>
+      <div class="camping-checklist-app">
+        <section class="category-card theme-green">
+          <header class="card-header">
+            <div class="header-title">
+              <div class="icon-container">
+                <i class="fa-solid fa-tent"></i>
+              </div>
+              <h2>Tent & Sleeping Gear</h2>
+            </div>
+            <span class="progress-tracker">0/6</span>
+          </header>
+
+          <div class="card-body">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <input type="checkbox" id="tent" name="tent">
+                <label for="tent">Tent (with poles and pegs)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="sleeping-bag" name="sleeping-bag">
+                <label for="sleeping-bag">Sleeping bag (suitable for the temperature)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="sleeping-mat" name="sleeping-mat">
+                <label for="sleeping-mat">Sleeping mat or foam pad</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="camping-pillow" name="camping-pillow">
+                <label for="camping-pillow">Camping pillow or inflatable pillow</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="ground-tarp" name="ground-tarp">
+                <label for="ground-tarp">Ground tarp or footprint</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="extra-blanket" name="extra-blanket">
+                <label for="extra-blanket">Extra blanket for cold nights</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="category-card theme-orange">
+          <header class="card-header">
+            <div class="header-title">
+              <div class="icon-container">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <h2>Cooking & Food</h2>
+            </div>
+            <span class="progress-tracker">0/8</span>
+          </header>
+
+          <div class="card-body">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <input type="checkbox" id="camping-stove" name="camping-stove">
+                <label for="camping-stove">Portable camping stove</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="fuel-canisters" name="fuel-canisters">
+                <label for="fuel-canisters">Fuel canisters or lighter</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="cooking-utensils" name="cooking-utensils">
+                <label for="cooking-utensils">Pot, pan, and cooking utensils</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="plates-cutlery" name="plates-cutlery">
+                <label for="plates-cutlery">Plates, cups, and cutlery</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="water-bottle" name="water-bottle">
+                <label for="water-bottle">Reusable water bottle (at least 2L)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="snacks-meals" name="snacks-meals">
+                <label for="snacks-meals">Snacks and easy-to-cook meals</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="cool-box" name="cool-box">
+                <label for="cool-box">Cool box or insulated bag</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="trash-bags" name="trash-bags">
+                <label for="trash-bags">Biodegradable trash bags</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="category-card theme-blue">
+          <header class="card-header">
+            <div class="header-title">
+              <div class="icon-container">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <h2>Clothing</h2>
+            </div>
+            <span class="progress-tracker">0/7</span>
+          </header>
+
+          <div class="card-body">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <input type="checkbox" id="waterproof-jacket" name="waterproof-jacket">
+                <label for="waterproof-jacket">Waterproof jacket or rain poncho</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="hiking-shoes" name="hiking-shoes">
+                <label for="hiking-shoes">Sturdy hiking shoes or boots</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="warm-socks" name="warm-socks">
+                <label for="warm-socks">Warm, moisture-wicking socks</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="thermal-layers" name="thermal-layers">
+                <label for="thermal-layers">Thermal base layers</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="extra-clothing" name="extra-clothing">
+                <label for="extra-clothing">Extra set of clothing for each day</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="sun-hat-beanie" name="sun-hat-beanie">
+                <label for="sun-hat-beanie">Sun hat and warm beanie</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="lightweight-gloves" name="lightweight-gloves">
+                <label for="lightweight-gloves">Lightweight gloves</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="category-card theme-olive">
+          <header class="card-header">
+            <div class="header-title">
+              <div class="icon-container">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h2>Tools & Equipment</h2>
+            </div>
+            <span class="progress-tracker">0/8</span>
+          </header>
+
+          <div class="card-body">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <input type="checkbox" id="flashlight" name="flashlight">
+                <label for="flashlight">Flashlight or headlamp (with spare batteries)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="power-bank" name="power-bank">
+                <label for="power-bank">Portable power bank / solar charger</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="paper-map" name="paper-map">
+                <label for="paper-map">Paper map of the area</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="compass-gps" name="compass-gps">
+                <label for="compass-gps">Compass or GPS device</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="multi-tool" name="multi-tool">
+                <label for="multi-tool">Multi-tool or pocket knife</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="paracord" name="paracord">
+                <label for="paracord">Paracord or rope</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="matches-firestarter" name="matches-firestarter">
+                <label for="matches-firestarter">Waterproof matches or fire starter</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="duct-tape" name="duct-tape">
+                <label for="duct-tape">Duct tape for quick repairs</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="category-card theme-purple">
+          <header class="card-header">
+            <div class="header-title">
+              <div class="icon-container">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h2>Hygiene & Health</h2>
+            </div>
+            <span class="progress-tracker">0/8</span>
+          </header>
+
+          <div class="card-body">
+            <ul class="checklist">
+              <li class="checklist-item">
+                <input type="checkbox" id="first-aid-kit" name="first-aid-kit">
+                <label for="first-aid-kit">First aid kit (bandages, antiseptic, pain relief)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="sunscreen" name="sunscreen">
+                <label for="sunscreen">Sunscreen (SPF 30 or higher)</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="insect-repellent" name="insect-repellent">
+                <label for="insect-repellent">Insect repellent spray</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="wet-wipes" name="wet-wipes">
+                <label for="wet-wipes">Biodegradable wet wipes</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="hand-sanitiser" name="hand-sanitiser">
+                <label for="hand-sanitiser">Hand sanitiser</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="toilet-paper" name="toilet-paper">
+                <label for="toilet-paper">Biodegradable toilet paper</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="toothbrush" name="toothbrush">
+                <label for="toothbrush">Toothbrush and toothpaste</label>
+              </li>
+              <li class="checklist-item">
+                <input type="checkbox" id="personal-medication" name="personal-medication">
+                <label for="personal-medication">Any personal medication</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
   </main>
   <footer class="footer">
     <div class="footer-container">
