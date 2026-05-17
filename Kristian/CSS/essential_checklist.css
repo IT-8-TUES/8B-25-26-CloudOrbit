@@ -337,7 +337,11 @@ body {
 .checklist-item input[type="checkbox"]:checked {
   background-color: #cdbfae;
 }
-
+.crossed-out {
+  text-decoration: line-through;
+  opacity: 0.6; 
+  transition: all 0.3s ease;
+}
 .checklist-item input[type="checkbox"]:checked::after {
   content: '\f00c';
   font-family: 'Font Awesome 6 Free';
@@ -355,6 +359,29 @@ body {
   font-size: 0.95rem;
   color: #222;
   user-select: none;
+}
+.success-banner {
+  display: none;
+  background-color: #ebf3e6; 
+  border: 2px solid #3c6e3d;
+  border-radius: 12px; 
+  padding: 24px;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+.success-banner h2 {
+  color: #2b5329; 
+  margin: 0 0 10px 0;
+  font-family: serif;
+  font-size: 1.6em;
+}
+
+.success-banner p {
+  color: #666;
+  margin: 0;
+  font-size: 1em;
 }
 .progress-bar-container {
   height: 4px;
