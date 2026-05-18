@@ -6,10 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #10280d;
+  background-color: #eff3e4;
   color: #f4f1e7;
 }
 
+/* Navbar + Navbar stuff */
 .navbar {
   width: 100%;
   background-color: #294c1d;
@@ -150,21 +151,210 @@ body {
   border-radius: 16px;
 }
 
-.content {
-  min-height: 350px;
-  padding: 80px 10%;
-  background-color: #15330f;
+/* Za Purviq div */
+.begginingPart {
+  width: 100%;
+  min-height: 10rem;
+  background: #4b8f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-.content h1 {
-  font-size: 45px;
-  margin-bottom: 15px;
+.begginingPart h5 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d9e7c7;
+  margin-bottom: 1rem;
 }
 
-.content p {
-  color: #c4bea4;
+.begginingPart h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
 }
 
+.begginingPart p {
+  max-width: 38rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #d8e6c8;
+}
+
+/* Za Vtoriq div */
+.secondPart {
+  width: 100%;
+  background-color: #eff3e4; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+/* Kartichkite */
+.card_left,
+.card_right {
+  flex: 0 0 calc(50% - 0.5rem);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
+  align-items: start;
+  align-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  min-height: 150px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+
+.card_title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #14330f;
+  margin-bottom: 0;
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+.card_description {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #3d4238;
+  text-align: left;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.card_icon {
+  width: 40px;
+  height: 40px;
+  background-color: #d4e8f7;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #4a90e2;
+  margin-bottom: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+.icon_blue {
+  background-color: #d4e8f7;
+  color: #4a90e2;
+}
+
+.icon_green {
+  background-color: #dcf5e3;
+  color: #38a169;
+}
+
+.icon_orange {
+  background-color: #feebd8;
+  color: #ed8936;
+}
+
+.icon_purple {
+  background-color: #e9d8fd;
+  color: #9f7aea;
+}
+.icon_red {
+  background-color: #fed7d7;
+  color: #e53e3e;
+}
+.icon_yellow {
+  background-color: #fefcbf;
+  color: #d9e43a;
+}
+.card_number {
+  position: static;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+/* Za Tretiq div */
+.thirdPart {
+  width: 100%;
+  background-color: #c9cfa4;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.bonus_title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #14330f;
+  margin-bottom: 1.5rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.list_container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.list_container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.list_container li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list_container .card_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.list_container .card_description {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer + Footer stuff */
 .footer {
   background-color: #14330f;
   padding: 70px 0 30px;
@@ -222,7 +412,9 @@ body {
   font-size: 13px;
 }
 
+/* Responsive дизайн */
 @media (max-width: 950px) {
+
   .nav-links,
   .desktop-btn {
     display: none;
