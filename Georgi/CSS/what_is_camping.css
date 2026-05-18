@@ -276,3 +276,296 @@ body {
     padding: 60px 7%;
   }
 }
+
+.wic-main {
+  background-color: #fffaf0;
+}
+
+.wic-hero {
+  min-height: 360px;
+  background:
+    linear-gradient(rgba(15, 42, 15, 0.82), rgba(15, 42, 15, 0.82)),
+    url("https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.wic-hero-content {
+  max-width: 700px;
+}
+
+.wic-label {
+  color: #f28a45;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.wic-hero h1 {
+  font-family: Georgia, serif;
+  color: #fffaf0;
+  font-size: 56px;
+  margin-bottom: 22px;
+}
+
+.wic-hero p {
+  color: #d5d0b8;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.wic-meaning {
+  background-color: #fffaf0;
+  padding: 95px 19%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.wic-text h2,
+.wic-heading h2 {
+  font-family: Georgia, serif;
+  color: #173f16;
+  font-size: 42px;
+  margin-bottom: 28px;
+}
+
+.wic-text p {
+  color: #5d5647;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+.wic-quote {
+  background-color: #e8f2df;
+  border-left: 5px solid #2f6b1f;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 35px;
+}
+
+.wic-quote p {
+  color: #244d1c;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.wic-reasons h3 {
+  font-family: Georgia, serif;
+  color: #173f16;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.wic-reasons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wic-reasons li {
+  color: #5d5647;
+  font-size: 16px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wic-reasons i {
+  width: 28px;
+  height: 28px;
+  background-color: #2f6b1f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.wic-types {
+  background-color: #eee8d7;
+  padding: 95px 19%;
+}
+
+.wic-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.wic-heading h2 {
+  margin-bottom: 16px;
+}
+
+.wic-heading p {
+  color: #7a705e;
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.wic-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wic-card {
+  background-color: white;
+  padding: 34px 32px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.wic-card h3 {
+  font-family: Georgia, serif;
+  color: #173f16;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.wic-card p {
+  color: #6b6252;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.wic-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 21px;
+}
+
+.green-icon {
+  color: #2f6b1f;
+  background-color: #e4f0dc;
+}
+
+.orange-icon {
+  color: #e67b3c;
+  background-color: #fde4d2;
+}
+
+.yellow-icon {
+  color: #8c7a2e;
+  background-color: #f7edc9;
+}
+
+.blue-icon {
+  color: #2a7ca3;
+  background-color: #d9eef8;
+}
+
+.pink-icon {
+  color: #b04692;
+  background-color: #f4d2eb;
+}
+
+.wic-benefits {
+  background-color: #fffaf0;
+  padding: 95px 19%;
+}
+
+.wic-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.wic-benefit {
+  background-color: #e8f2df;
+  padding: 28px;
+  border-radius: 18px;
+  display: flex;
+  gap: 20px;
+}
+
+.wic-benefit > i {
+  width: 48px;
+  height: 48px;
+  background-color: #2f6b1f;
+  color: white;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wic-benefit h3 {
+  color: #173f16;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.wic-benefit p {
+  color: #5d5647;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 1100px) {
+  .wic-meaning,
+  .wic-types,
+  .wic-benefits {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .wic-meaning {
+    grid-template-columns: 1fr;
+  }
+
+  .wic-card-grid,
+  .wic-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wic-hero h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wic-hero {
+    min-height: 320px;
+  }
+
+  .wic-hero h1 {
+    font-size: 38px;
+  }
+
+  .wic-card-grid,
+  .wic-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wic-text h2,
+  .wic-heading h2 {
+    font-size: 34px;
+  }
+
+  .wic-meaning,
+  .wic-types,
+  .wic-benefits {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
