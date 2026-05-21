@@ -1,14 +1,9 @@
-* {
+nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #10280d;
-  color: #f4f1e7;
-}
 
 .navbar {
   width: 100%;
@@ -150,7 +145,7 @@ body {
   border-radius: 16px;
 }
 
-div {
+.First {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-align: center;
@@ -172,7 +167,7 @@ div {
   margin-bottom: 2rem;
 }
 
-h1 {
+#Top {
   font-family: 'Zilla Slab', serif;
   font-size: 3rem;
   text-align: center;
@@ -217,7 +212,374 @@ h1 {
   background-color: #fdfaf8;
   padding-right: 200px;
 }
+.Fire{
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 20rem;
+    padding-bottom: 0.2rem;
+    padding-top: 7rem;
+    color:rgb(209, 131, 58);
+}
+.fire-rules{
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+    text-align: justify;
+    gap:12;
+    margin-left:24rem;
+}
+ul{
+  list-style-type: none;
 
+}
+.fire-image{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 16.5rem;
+    margin-top: 5rem;
+    float: left;
+}
+#Wildlife{
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 24rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1.5rem;
+    color:rgb(214, 133, 56);
+}
+.wildlife {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    margin-left:5rem;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+    text-align: justify;
+    ALIGN-ITEMS: flex-start;
+    gap:12;
+    padding-left: 18rem;
+}
+.fire {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Стилове за всеки елемент от списъка */
+.fire li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px; /* Разстояние между редовете */
+    
+    /* Подреждаме иконката и текста в една линия */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Разстояние между отметката и текста */
+}
+
+/* 3. Създаваме цветната отметка преди текста */
+.fire li::before {
+    content: "✓";        /* Символът за отметка */
+    color: #e44438;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
+    font-weight: bold;   /* Прави я по-плътна */
+    font-size: 18px;     /* Размер на отметката */
+    width: 20px;              /* Ширина на кръга */
+    height: 20px;             /* Височина на кръга */
+    border: 2px solid #c44d2f;/* Оранжева граница (кръг) */
+    border-radius: 50%;       /* Прави го идеална сфера */
+    
+    /* Центриране на отметката точно в средата на кръга: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    margin-top: 2px;
+}
+
+.animal-image{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 17rem;
+    margin-top: 2rem;
+    float: left;
+}
+.animal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Стилове за всеки елемент от списъка */
+.animal li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px; /* Разстояние между редовете */
+    
+    /* Подреждаме иконката и текста в една линия */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Разстояние между отметката и текста */
+}
+
+/* 3. Създаваме цветната отметка преди текста */
+.animal li::before {
+    content: "✓";        /* Символът за отметка */
+    color: #3ac976;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
+    font-weight: bold;   /* Прави я по-плътна */
+    font-size: 18px;     /* Размер на отметката */
+   width: 20px;              /* Ширина на кръга */
+    height: 20px;             /* Височина на кръга */
+    border: 2px solid #52c55cc2;/* Оранжева граница (кръг) */
+    border-radius: 50%;       /* Прави го идеална сфера */
+    
+    /* Центриране на отметката точно в средата на кръга: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    margin-top: 2px;
+}
+#Weather{
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 24rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1.5rem;
+    color:rgb(219, 135, 55);
+    gap:12;
+}
+
+.weather {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    margin-left:5rem;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+    text-align: justify;
+    ALIGN-ITEMS:start;
+    gap:12;
+    padding-left: 0rem;
+}
+.weather-image{
+    width: 7rem;
+    height: 7rem;
+    margin-left: 16rem;
+    margin-top: 2rem;
+    float: left;
+} 
+.ticks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Стилове за всеки елемент от списъка */
+.ticks li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px; /* Разстояние между редовете */
+    
+    /* Подреждаме иконката и текста в една линия */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Разстояние между отметката и текста */
+}
+
+/* 3. Създаваме цветната отметка преди текста */
+.ticks li::before {
+    content: "✓";        /* Символът за отметка */
+    color: #368ada;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
+    font-weight: bold;   /* Прави я по-плътна */
+    font-size: 18px;     /* Размер на отметката */
+    width: 20px;              /* Ширина на кръга */
+    height: 20px;             /* Височина на кръга */
+    border: 2px solid #75c9eb;/* Оранжева граница (кръг) */
+    border-radius: 50%;       /* Прави го идеална сфера */
+    
+    /* Центриране на отметката точно в средата на кръга: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    margin-top: 2px;
+}
+#Aid{
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 25rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1.5rem;
+    color:rgb(224, 137, 53);
+}
+.aid {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    margin-left:5rem;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+    text-align: justify;
+    ALIGN-ITEMS: flex-start;
+    gap:12;
+    padding-left: 18rem;
+}
+.aid-image{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 19rem;
+    margin-top: 2rem;
+    float: left;
+    border-radius: 20px;
+}
+.custom-ticks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Стилове за всеки елемент от списъка */
+.custom-ticks li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px; /* Разстояние между редовете */
+    
+    /* Подреждаме иконката и текста в една линия */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Разстояние между отметката и текста */
+}
+
+/* 3. Създаваме цветната отметка преди текста */
+.custom-ticks li::before {
+    content: "✓";        /* Символът за отметка */
+    color: #c74b4b;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
+    font-weight: bold;   /* Прави я по-плътна */
+    font-size: 18px;     /* Размер на отметката */
+   width: 20px;              /* Ширина на кръга */
+    height: 20px;             /* Височина на кръга */
+    border: 2px solid #d65a51;/* Оранжева граница (кръг) */
+    border-radius: 50%;       /* Прави го идеална сфера */
+    
+    /* Центриране на отметката точно в средата на кръга: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    margin-top: 2px;
+}
+  #Emergency{
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 24rem;
+    padding-bottom: 0.2rem;
+    padding-top: 1.5rem;
+    color:rgb(229, 139, 51);
+}
+.emergency {
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    margin-left:5rem;
+    color: black;
+    white-space: pre-line;
+    line-height: 1.6;
+    text-align: justify;
+    ALIGN-ITEMS: flex-start;
+    gap:12;
+    padding-left: 18rem;
+}
+.emergency-image{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 19rem;
+    margin-top: 2.5rem;
+    float: left;
+    border-radius: 20px;
+
+}
+.phone {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Стилове за всеки елемент от списъка */
+.phone li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 12px; /* Разстояние между редовете */
+    
+    /* Подреждаме иконката и текста в една линия */
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Разстояние между отметката и текста */
+}
+
+/* 3. Създаваме цветната отметка преди текста */
+.phone li::before {
+    content: "✓";        /* Символът за отметка */
+    color: #d4a282;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
+    font-weight: bold;   /* Прави я по-плътна */
+    font-size: 18px;     /* Размер на отметката */
+    width: 20px;              /* Ширина на кръга */
+    height: 20px;             /* Височина на кръга */
+    border: 2px solid #c48864;/* Оранжева граница (кръг) */
+    border-radius: 50%;       /* Прави го идеална сфера */
+    
+    /* Центриране на отметката точно в средата на кръга: */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    margin-top: 2px;
+}
+
+#Golden{
+  text-align: start;
+  color: #2c811b;
+  border: 2px solid #2c811b;
+  border-radius: 20px;
+  font-family: 'Zilla Slab', serif;
+  margin: 5rem;
+  padding: 2rem;
+  padding-left: 4rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  background-color: #d9dfd1;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.golden-image{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 16rem;
+    margin-top: 6.3rem;
+    float: left;
+
+  
+}
 .content {
   min-height: 350px;
   padding: 80px 10%;
@@ -344,4 +706,3 @@ h1 {
   .content {
     padding: 60px 7%;
   }
-}
