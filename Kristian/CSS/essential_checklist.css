@@ -361,7 +361,7 @@ body {
   user-select: none;
 }
 .success-banner {
-  display: none;
+  width: 50%;
   background-color: #ebf3e6; 
   border: 2px solid #3c6e3d;
   border-radius: 12px; 
@@ -394,12 +394,14 @@ body {
 }
 
 .progress-bar-fill {
+  background-color: #80e981;
   height: 100%;
-  background-color: var(--theme-dark);
-  width: 0%; 
-  transition: width 0.3s ease; 
+  transition: width 0.4s ease-in-out;
+  border-radius: 1rem;
 }
-
+.progress-tracker{
+  color: black;
+}
 /* Footer + footer stuff */
 .footer {
   background-color: #14330f;
