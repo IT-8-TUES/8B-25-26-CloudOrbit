@@ -198,17 +198,12 @@ nav {
 
 .warning {
   border: 4px solid #d89d31;
-  /* The border color */
   padding: 1.2rem;
-  /* Space inside the border */
   margin: 1.5rem;
   margin-right: 17rem;
   margin-left: 17rem;
-  /* Space outside the border */
   max-width: 90%;
-  /* Keeps it from hitting the screen edges */
   border-radius: 20px;
-  /* Optional: rounds the corners slightly */
   background-color: #fdfaf8;
   padding-right: 200px;
 }
@@ -217,20 +212,38 @@ nav {
     font-size: 2rem;
     text-align: start;
     margin-left: 20rem;
-    padding-bottom: 0.2rem;
-    padding-top: 7rem;
+    padding-bottom: 0;
+    padding-top: 3.5rem;
     color:rgb(209, 131, 58);
 }
-.fire-rules{
+.fire-rules {
     font-family: 'Montserrat', sans-serif;
-    display:flex;
     color: black;
     white-space: pre-line;
-    line-height: 1.6;
-    text-align: justify;
-    gap:12;
-    margin-left:24rem;
+    line-height: 1.8;
+    text-align: left;
+    
+    /* 1. Columns layout setup */
+    column-count: 2;
+    column-gap: 120px;
+    column-rule: 1px solid #e0e0e0;
+    
+  
+    margin-top: 2rem;      
+    margin-bottom: 4rem;   
+    margin-left: 15%;      
+    
+    
+    max-width: 1050px; 
 }
+
+
+.fire-rules li,
+.fire-rules p {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+}
+
 ul{
   list-style-type: none;
 
@@ -239,7 +252,7 @@ ul{
     width: 5rem;
     height: 5rem;
     margin-left: 16.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     float: left;
 }
 #Wildlife{
@@ -253,15 +266,30 @@ ul{
 }
 .wildlife {
     font-family: 'Montserrat', sans-serif;
-    display:flex;
-    margin-left:5rem;
     color: black;
     white-space: pre-line;
-    line-height: 1.6;
-    text-align: justify;
-    ALIGN-ITEMS: flex-start;
-    gap:12;
-    padding-left: 18rem;
+    line-height: 1.8;
+    text-align: left;
+    
+    /* 1. Columns layout setup */
+    column-count: 2;
+    column-gap: 120px;
+    column-rule: 1px solid #e0e0e0;
+    
+  
+    margin-top: 2rem;      
+    margin-bottom: 4rem;   
+    margin-left: 15%;      
+    
+    
+    max-width: 1050px; 
+}
+
+
+.fire-rules li,
+.fire-rules p {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
 }
 .fire {
     list-style: none;
@@ -269,37 +297,34 @@ ul{
     margin: 0;
 }
 
-/* 2. Стилове за всеки елемент от списъка */
 .fire li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #4a4a4a;
-    margin-bottom: 12px; /* Разстояние между редовете */
+    margin-bottom: 12px;
     
-    /* Подреждаме иконката и текста в една линия */
     display: flex;
     align-items: flex-start;
-    gap: 10px; /* Разстояние между отметката и текста */
+    gap: 10px; 
 }
 
-/* 3. Създаваме цветната отметка преди текста */
+
 .fire li::before {
-    content: "✓";        /* Символът за отметка */
-    color: #e44438;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
-    font-weight: bold;   /* Прави я по-плътна */
-    font-size: 18px;     /* Размер на отметката */
-    width: 20px;              /* Ширина на кръга */
-    height: 20px;             /* Височина на кръга */
-    border: 2px solid #c44d2f;/* Оранжева граница (кръг) */
-    border-radius: 50%;       /* Прави го идеална сфера */
+    content: "✓";        
+    color: #e44438;     
+    font-weight: bold;
+    font-size: 18px;     
+    width: 20px;            
+    height: 20px;             
+    border: 2px solid #c44d2f;
+    border-radius: 50%;      
     
-    /* Центриране на отметката точно в средата на кръга: */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    flex-shrink: 0;          
     margin-top: 2px;
 }
 
@@ -307,7 +332,7 @@ ul{
     width: 5rem;
     height: 5rem;
     margin-left: 17rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
     float: left;
 }
 .animal {
@@ -316,37 +341,33 @@ ul{
     margin: 0;
 }
 
-/* 2. Стилове за всеки елемент от списъка */
 .animal li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #4a4a4a;
-    margin-bottom: 12px; /* Разстояние между редовете */
+    margin-bottom: 12px; 
     
-    /* Подреждаме иконката и текста в една линия */
     display: flex;
     align-items: flex-start;
-    gap: 10px; /* Разстояние между отметката и текста */
+    gap: 10px; 
 }
 
-/* 3. Създаваме цветната отметка преди текста */
 .animal li::before {
-    content: "✓";        /* Символът за отметка */
-    color: #3ac976;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
-    font-weight: bold;   /* Прави я по-плътна */
-    font-size: 18px;     /* Размер на отметката */
-   width: 20px;              /* Ширина на кръга */
-    height: 20px;             /* Височина на кръга */
-    border: 2px solid #52c55cc2;/* Оранжева граница (кръг) */
-    border-radius: 50%;       /* Прави го идеална сфера */
+    content: "✓";       
+    color: #3ac976;     
+    font-weight: bold;  
+    font-size: 18px;    
+   width: 20px;             
+    height: 20px;            
+    border: 2px solid #52c55cc2;
+    border-radius: 50%;       
     
-    /* Центриране на отметката точно в средата на кръга: */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    flex-shrink: 0;          
     margin-top: 2px;
 }
 #Weather{
@@ -361,22 +382,36 @@ ul{
 }
 
 .weather {
-    font-family: 'Montserrat', sans-serif;
-    display:flex;
-    margin-left:5rem;
+   font-family: 'Montserrat', sans-serif;
     color: black;
     white-space: pre-line;
-    line-height: 1.6;
-    text-align: justify;
-    ALIGN-ITEMS:start;
-    gap:12;
-    padding-left: 0rem;
+    line-height: 1.8;
+    text-align: left;
+    
+    column-count: 2;
+    column-gap: 120px;
+    column-rule: 1px solid #e0e0e0;
+    
+  
+    margin-top: 2rem;      
+    margin-bottom: 4rem;   
+    margin-left: 15%;      
+    
+    
+    max-width: 1050px; 
+}
+
+
+.fire-rules li,
+.fire-rules p {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
 }
 .weather-image{
     width: 7rem;
     height: 7rem;
     margin-left: 16rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
     float: left;
 } 
 .ticks {
@@ -385,37 +420,34 @@ ul{
     margin: 0;
 }
 
-/* 2. Стилове за всеки елемент от списъка */
 .ticks li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #4a4a4a;
-    margin-bottom: 12px; /* Разстояние между редовете */
+    margin-bottom: 12px; 
     
-    /* Подреждаме иконката и текста в една линия */
+    
     display: flex;
     align-items: flex-start;
-    gap: 10px; /* Разстояние между отметката и текста */
+    gap: 10px; 
 }
 
-/* 3. Създаваме цветната отметка преди текста */
 .ticks li::before {
-    content: "✓";        /* Символът за отметка */
-    color: #368ada;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
-    font-weight: bold;   /* Прави я по-плътна */
-    font-size: 18px;     /* Размер на отметката */
-    width: 20px;              /* Ширина на кръга */
-    height: 20px;             /* Височина на кръга */
-    border: 2px solid #75c9eb;/* Оранжева граница (кръг) */
-    border-radius: 50%;       /* Прави го идеална сфера */
+    content: "✓";       
+    color: #368ada;     
+    font-weight: bold;  
+    font-size: 18px;    
+    width: 20px;              
+    height: 20px;            
+    border: 2px solid #75c9eb;
+    border-radius: 50%;      
     
-    /* Центриране на отметката точно в средата на кръга: */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    flex-shrink: 0;           
     margin-top: 2px;
 }
 #Aid{
@@ -429,21 +461,36 @@ ul{
 }
 .aid {
     font-family: 'Montserrat', sans-serif;
-    display:flex;
-    margin-left:5rem;
     color: black;
     white-space: pre-line;
-    line-height: 1.6;
-    text-align: justify;
-    ALIGN-ITEMS: flex-start;
-    gap:12;
-    padding-left: 18rem;
+    line-height: 1.8;
+    text-align: left;
+    
+    /* 1. Columns layout setup */
+    column-count: 2;
+    column-gap: 120px;
+    column-rule: 1px solid #e0e0e0;
+    
+  
+    margin-top: 2rem;      
+    margin-bottom: 4rem;   
+    margin-left: 15%;      
+    
+    
+    max-width: 1050px; 
+}
+
+
+.fire-rules li,
+.fire-rules p {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
 }
 .aid-image{
     width: 4rem;
     height: 4rem;
     margin-left: 19rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     float: left;
     border-radius: 20px;
 }
@@ -453,37 +500,34 @@ ul{
     margin: 0;
 }
 
-/* 2. Стилове за всеки елемент от списъка */
 .custom-ticks li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #4a4a4a;
-    margin-bottom: 12px; /* Разстояние между редовете */
+    margin-bottom: 12px; 
     
-    /* Подреждаме иконката и текста в една линия */
+  
     display: flex;
     align-items: flex-start;
-    gap: 10px; /* Разстояние между отметката и текста */
+    gap: 10px;
 }
 
-/* 3. Създаваме цветната отметка преди текста */
 .custom-ticks li::before {
-    content: "✓";        /* Символът за отметка */
-    color: #c74b4b;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
-    font-weight: bold;   /* Прави я по-плътна */
-    font-size: 18px;     /* Размер на отметката */
-   width: 20px;              /* Ширина на кръга */
-    height: 20px;             /* Височина на кръга */
-    border: 2px solid #d65a51;/* Оранжева граница (кръг) */
-    border-radius: 50%;       /* Прави го идеална сфера */
+    content: "✓";        
+    color: #c74b4b;      
+    font-weight: bold;   
+    font-size: 18px;    
+   width: 20px;              
+    height: 20px;            
+    border: 2px solid #d65a51;
+    border-radius: 50%;       
     
-    /* Центриране на отметката точно в средата на кръга: */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    flex-shrink: 0;          
     margin-top: 2px;
 }
   #Emergency{
@@ -497,21 +541,36 @@ ul{
 }
 .emergency {
     font-family: 'Montserrat', sans-serif;
-    display:flex;
-    margin-left:5rem;
     color: black;
     white-space: pre-line;
-    line-height: 1.6;
-    text-align: justify;
-    ALIGN-ITEMS: flex-start;
-    gap:12;
-    padding-left: 18rem;
+    line-height: 1.8;
+    text-align: left;
+    
+    /* 1. Columns layout setup */
+    column-count: 2;
+    column-gap: 120px;
+    column-rule: 1px solid #e0e0e0;
+    
+  
+    margin-top: 2rem;      
+    margin-bottom: 4rem;   
+    margin-left: 15%;      
+    
+    
+    max-width: 1050px; 
+}
+
+
+.fire-rules li,
+.fire-rules p {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
 }
 .emergency-image{
     width: 4rem;
     height: 4rem;
     margin-left: 19rem;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     float: left;
     border-radius: 20px;
 
@@ -522,37 +581,34 @@ ul{
     margin: 0;
 }
 
-/* 2. Стилове за всеки елемент от списъка */
 .phone li {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #4a4a4a;
-    margin-bottom: 12px; /* Разстояние между редовете */
+    margin-bottom: 12px; 
     
-    /* Подреждаме иконката и текста в една линия */
+    
     display: flex;
     align-items: flex-start;
-    gap: 10px; /* Разстояние между отметката и текста */
+    gap: 10px; 
 }
 
-/* 3. Създаваме цветната отметка преди текста */
 .phone li::before {
-    content: "✓";        /* Символът за отметка */
-    color: #d4a282;      /* Твоят оранжев цвят (можеш да го смениш с какъвто искаш) */
-    font-weight: bold;   /* Прави я по-плътна */
-    font-size: 18px;     /* Размер на отметката */
-    width: 20px;              /* Ширина на кръга */
-    height: 20px;             /* Височина на кръга */
-    border: 2px solid #c48864;/* Оранжева граница (кръг) */
-    border-radius: 50%;       /* Прави го идеална сфера */
+    content: "✓";       
+    color: #d4a282;     
+    font-weight: bold;  
+    font-size: 18px;     
+    width: 20px;              
+    height: 20px;             
+    border: 2px solid #c48864;
+    border-radius: 50%;       
     
-    /* Центриране на отметката точно в средата на кръга: */
     display: flex;
     align-items: center;
     justify-content: center;
     
-    flex-shrink: 0;           /* Пречи на кръгчето да се смачка при дълъг текст */
+    flex-shrink: 0;          
     margin-top: 2px;
 }
 
@@ -575,9 +631,10 @@ ul{
     width: 2rem;
     height: 2rem;
     margin-left: 16rem;
-    margin-top: 6.3rem;
+    margin-top: 2.5rem;
     float: left;
 
+  
   
 }
 .content {
